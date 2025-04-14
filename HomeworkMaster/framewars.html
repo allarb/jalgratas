@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Wars - Pedal Faster</title>
+    <link rel="stylesheet" href="css/960_12_col.css">
+    <style>
+        @font-face {
+            font-family: 'QuicksandBook';
+            src: url('fonts/Quicksand_Book-webfont.eot');
+        }
+        body {
+            color: #ffffff;
+            background: #413f3b url("images/bg.jpg");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+        }
+        a {
+            color: #b5c1ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .header {
+            background-image: url("images/bg-header.jpg");
+            padding: 0px 0px 0px 0px;
+            height: 100px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 50;
+        }
+
+        .nav {
+            float: right;
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            padding: 45px 0px 0px 0px;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+            background-image: url("images/bg-triangle.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            text-align: left;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            color: #b5c1ad;
+        }
+
+        h1 {
+            font-size: 240%;
+            margin-top: 140px;
+        }
+       
+        .intro {
+            clear: left;
+            font-size: 90%;
+            line-height: 1.4em;
+        }
+        .main-story {
+            background-image: url("images/triangles.png");
+            background-repeat: no-repeat;
+            background-position: 122px 142px;
+            height: auto; /* Changed to auto for flexible content */
+        }
+           
+        .footer {
+            clear: both;
+            background: rgba(0,0,0,0.2);
+            padding: 5px 10px;
+        }
+        .footer p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            text-align: right;
+        }
+        .footer a {
+            color: #807c72;
+        }
+        .frame-content {
+            background-color: rgba(65, 63, 59, 0.7);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 10px;
+            border-bottom: 1px solid #b5c1ad;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            color: #b5c1ad;
+            font-weight: normal;
+        }
+
+        .material-highlight {
+            background-color: rgba(181, 193, 173, 0.1);
+        }
+
+        .tech-specs {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tech-specs li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tech-specs li:before {
+            content: "•";
+            color: #b5c1ad;
+            position: absolute;
+            left: 0;
+        }
+        .back-button {
+        position: absolute;
+        left: 10px;
+        font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        color: #b5c1ad;
+        }
+        .back-button:hover {
+            color: #ffffff;
+        }
+        
+        /* New styles */
+        .material-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: rgba(181, 193, 173, 0.2);
+            border-radius: 3px;
+            font-size: 85%;
+            margin-left: 5px;
+        }
+        .featured-tech {
+            font-weight: bold;
+            color: #b5c1ad;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container_12">
+                <div class="grid_5">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo" />
+                    </a>
+                    <img src="images/header-triangle.png" alt="" width="116" height="100" />
+                </div>
+                <div class="nav grid_7">
+                    <a href="index.html">home</a> / 
+                    <a href="news.html">news</a> / 
+                    <a href="archives.html">archives</a> / 
+                    <a href="about.html">about</a> / 
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="wrapper">
+            <div class="main-story container_12">
+                <div class="grid_12">
+                    <h1>Frame Wars: The 2025 Material Revolution</h1>
+                    
+                    <article class="grid_8 alpha">
+                        <div class="frame-content">
+                            <p class="date">March 2, 2025</p>
+                            <img src="images/frame.jpg" alt="Advanced Bicycle Frame Manufacturing" class="history-image" />
+                            
+                            <h2>The New Frontier of Frame Engineering</h2>
+                            <p>As we enter 2025, frame technology has leaped beyond traditional materials into 
+                            an era of smart composites and bio-engineered solutions. The latest advancements 
+                            blend aerospace technology with sustainable manufacturing practices.</p>
+    
+                            <h3>2025 Material Comparison</h3>
+                            <table class="comparison-table">
+                                <tr>
+                                    <th>Material</th>
+                                    <th>Weight</th>
+                                    <th>Durability</th>
+                                    <th>Sustainability</th>
+                                    <th>Tech Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Steel <span class="material-badge">Classic</span></td>
+                                    <td>4.5/10</td>
+                                    <td>9/10</td>
+                                    <td>8/10</td>
+                                    <td>3/10</td>
+                                </tr>
+                                <tr class="material-highlight">
+                                    <td>Graphene Composite <span class="material-badge">Cutting Edge</span></td>
+                                    <td>9/10</td>
+                                    <td>8/10</td>
+                                    <td>6/10</td>
+                                    <td>10/10</td>
+                                </tr>
+                                <tr>
+                                    <td>Aluminum <span class="material-badge">Mainstream</span></td>
+                                    <td>6/10</td>
+                                    <td>7/10</td>
+                                    <td>5/10</td>
+                                    <td>5/10</td>
+                                </tr>
+                                <tr>
+                                    <td>Mycelium Bioframe <span class="material-badge">Eco</span></td>
+                                    <td>7/10</td>
+                                    <td>6/10</td>
+                                    <td>10/10</td>
+                                    <td>8/10</td>
+                                </tr>
+                                <tr>
+                                    <td>Liquid Metal Alloys <span class="material-badge">Experimental</span></td>
+                                    <td>8/10</td>
+                                    <td>7/10</td>
+                                    <td>4/10</td>
+                                    <td>9/10</td>
+                                </tr>
+                            </table>
+                            
+                            <h3>Smart Frame Technology</h3>
+                            <p>The <span class="featured-tech">2025 generation</span> of frames now incorporate:</p>
+                            <ul class="tech-specs">
+                                <li>Real-time stress monitoring via nano-sensors</li>
+                                <li>Self-healing polymer coatings</li>
+                                <li>Adaptive stiffness tuning</li>
+                                <li>Integrated energy harvesting</li>
+                            </ul>
+                        </div>
+                    </article>
+    
+                    <aside class="grid_4 omega">
+                        <div class="frame-content">
+                            <h3>2025 Innovation Spotlight</h3>
+                            <ul class="tech-specs">
+                                <li>4D-printed lattice structures</li>
+                                <li>DNA-based self-assembling materials</li>
+                                <li>Quantum-dot reinforced composites</li>
+                                <li>Neural network-optimized geometries</li>
+                                <li>Photosynthetic resin systems</li>
+                            </ul>
+    
+                            <h3>Manufacturing Breakthroughs</h3>
+                            <p>• AI-driven robotic layup<br>
+                            • Cold plasma bonding<br>
+                            • Molecular stitching<br>
+                            • Bio-fabrication vat growing</p>
+    
+                            <h3>Future Trends</h3>
+                            <p>• Programmable matter frames<br>
+                            • Carbon-negative production<br>
+                            • Living material integration<br>
+                            • Instant customization scanning</p>
+                            
+                            <div class="featured-tech">
+                                <p>"The 2025 frame isn't just built—it's grown, computed, and evolved"</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+    
+            <div class="footer clearfix">
+                <div class="container_12">
+                    <p class="grid_12">
+                        <a href="javascript:history.back()" class="back-button">← Back</a> |
+                        <a href="legal.html">Legal Information</a> | 
+                        <a href="privacy.html">Privacy Policy</a> | 
+                        <a href="copyright.html">Copyright &copy; Pedal Faster 2025</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

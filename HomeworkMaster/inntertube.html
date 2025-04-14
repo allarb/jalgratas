@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerTube - The best Cycling Videos</title>
+    <link rel="stylesheet" href="css/960_12_col.css">
+    <style>
+        @font-face {
+            font-family: 'QuicksandBook';
+            src: url('fonts/Quicksand_Book-webfont.eot');
+        }
+        body {
+            color: #ffffff;
+            background: #413f3b url("images/bg.jpg");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+        }
+        a {
+            color: #b5c1ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .header {
+            background-image: url("images/bg-header.jpg");
+            padding: 0px 0px 0px 0px;
+            height: 100px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 50;
+        }
+
+        .nav {
+            float: right;
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            padding: 45px 0px 0px 0px;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+            background-image: url("images/bg-triangle.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            text-align: left;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            color: #b5c1ad;
+        }
+
+        h1 {
+            font-size: 240%;
+            margin-top: 140px;
+        }
+       
+        .intro {
+            clear: left;
+            font-size: 90%;
+            line-height: 1.4em;
+        }
+        .main-story {
+            background-image: url("images/triangles.png");
+            background-repeat: no-repeat;
+            background-position: 122px 142px;
+            height: auto; /* Changed to auto for flexible content */
+        }
+           
+        .footer {
+            clear: both;
+            background: rgba(0,0,0,0.2);
+            padding: 5px 10px;
+        }
+        .footer p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            text-align: right;
+        }
+        .video-grid {
+            background-color: rgba(65, 63, 59, 0.7);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .video-item {
+            margin-bottom: 25px;
+            border-bottom: 1px dotted rgba(181, 193, 173, 0.3);
+            padding-bottom: 20px;
+        }
+
+        .video-item:last-child {
+            border-bottom: none;
+        }
+
+        .video-thumbnail {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            border: 2px solid #b5c1ad;
+            border-radius: 3px;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-thumbnail:hover img {
+            opacity: 0.7;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 48px;
+            opacity: 0.8;
+        }
+
+        .video-title {
+            color: #b5c1ad;
+            font-size: 120%;
+            margin-bottom: 10px;
+        }
+
+        .video-meta {
+            font-size: 85%;
+            color: #807c72;
+            margin-bottom: 10px;
+        }
+
+        .video-description {
+            line-height: 1.5;
+        }
+
+        .categories {
+            margin-top: 20px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: rgba(181, 193, 173, 0.2);
+            padding: 5px 10px;
+            margin: 0 5px 5px 0;
+            border-radius: 3px;
+            font-size: 85%;
+        }
+        .footer a {
+            color: #807c72;
+        }
+        .back-button {
+        position: absolute;
+        left: 10px;
+        font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        color: #b5c1ad;
+        }
+        .back-button:hover {
+            color: #ffffff;
+        }
+        
+        /* New styles */
+        .video-highlight {
+            font-weight: bold;
+            color: #b5c1ad;
+        }
+        .creator-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: rgba(181, 193, 173, 0.1);
+            border-radius: 3px;
+            font-size: 85%;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container_12">
+                <div class="grid_5">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo" />
+                    </a>
+                    <img src="images/header-triangle.png" alt="" width="116" height="100" />
+                </div>
+                <div class="nav grid_7">
+                    <a href="index.html">home</a> / 
+                    <a href="news.html">news</a> / 
+                    <a href="archives.html">archives</a> / 
+                    <a href="about.html">about</a> / 
+                    <a href="contact.html">contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="main-story container_12">
+                <div class="grid_12">
+                    <h1>InnerTube: 2025's Best Cycling Videos</h1>
+                    
+                    <div class="grid_8 alpha">
+                        <div class="video-grid">
+                            <article class="video-item">
+                                <a href="https://www.youtube.com/watch?v=nextgen1" target="_blank">
+                                    <div class="video-thumbnail">
+                                        <img src="images/gravel-2025.jpg" alt="Gravel Bike Adventure">
+                                        <span class="play-icon">▶</span>
+                                    </div>
+                                </a>
+                                <h2 class="video-title">Gravel Riding in the Arctic Circle <span class="creator-badge">Nordic Cycling</span></h2>
+                                <p class="video-meta">Duration: 12:45 | Views: 856K | Uploaded: 2 weeks ago</p>
+                                <p class="video-description">Experience 24-hour daylight on this <span class="video-highlight">epic 200km gravel route</span> through Norway's northern wilderness. The team tests new <span class="video-highlight">cold-weather gear</span> and self-charging bike lights powered by motion.</p>
+                                <div class="categories">
+                                    <span class="category-tag">Gravel</span>
+                                    <span class="category-tag">Adventure</span>
+                                    <span class="category-tag">2025 Tech</span>
+                                </div>
+                            </article>
+    
+                            <article class="video-item">
+                                <a href="https://www.youtube.com/watch?v=nextgen2" target="_blank">
+                                    <div class="video-thumbnail">
+                                        <img src="images/urban-2025.jpg" alt="Smart City Cycling">
+                                        <span class="play-icon">▶</span>
+                                    </div>
+                                </a>
+                                <h2 class="video-title">Tokyo 2045: Cycling in the Future City <span class="creator-badge">Urban Pedals</span></h2>
+                                <p class="video-meta">Duration: 8:22 | Views: 1.2M | Uploaded: 1 month ago</p>
+                                <p class="video-description">How <span class="video-highlight">AI traffic systems</span> and <span class="video-highlight">vertical bike highways</span> are transforming urban mobility. Features the new <span class="video-highlight">self-balancing cargo bikes</span> being tested in Tokyo's smart districts.</p>
+                                <div class="categories">
+                                    <span class="category-tag">Urban</span>
+                                    <span class="category-tag">Future Tech</span>
+                                    <span class="category-tag">Commuting</span>
+                                </div>
+                            </article>
+    
+                            <article class="video-item">
+                                <a href="https://www.youtube.com/watch?v=nextgen3" target="_blank">
+                                    <div class="video-thumbnail">
+                                        <img src="images/ebike-2025.jpg" alt="E-Bike Maintenance">
+                                        <span class="play-icon">▶</span>
+                                    </div>
+                                </a>
+                                <h2 class="video-title">2025 E-Bike Maintenance Masterclass <span class="creator-badge">Bike Lab</span></h2>
+                                <p class="video-meta">Duration: 18:30 | Views: 543K | Uploaded: 3 weeks ago</p>
+                                <p class="video-description">Everything you need to know about maintaining <span class="video-highlight">next-gen e-bikes</span>, from <span class="video-highlight">solid-state batteries</span> to <span class="video-highlight">self-diagnosing motors</span>. Includes troubleshooting the new wireless charging systems.</p>
+                                <div class="categories">
+                                    <span class="category-tag">E-Bikes</span>
+                                    <span class="category-tag">Maintenance</span>
+                                    <span class="category-tag">How-To</span>
+                                </div>
+                            </article>
+                            
+                            <article class="video-item">
+                                <a href="https://www.youtube.com/watch?v=nextgen4" target="_blank">
+                                    <div class="video-thumbnail">
+                                        <img src="images/mtb-2025.jpg" alt="Mountain Biking Innovation">
+                                        <span class="play-icon">▶</span>
+                                    </div>
+                                </a>
+                                <h2 class="video-title">Testing 2025's Wildest MTB Tech <span class="creator-badge">Dirt Revolution</span></h2>
+                                <p class="video-meta">Duration: 15:18 | Views: 932K | Uploaded: 5 days ago</p>
+                                <p class="video-description">We put <span class="video-highlight">shape-shifting suspension</span>, <span class="video-highlight">impact-absorbing smart tires</span>, and <span class="video-highlight">AR riding goggles</span> through their paces on the gnarliest trails in British Columbia.</p>
+                                <div class="categories">
+                                    <span class="category-tag">Mountain Biking</span>
+                                    <span class="category-tag">Tech</span>
+                                    <span class="category-tag">Gear Test</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+    
+                    <aside class="grid_4 omega">
+                        <div class="video-grid">
+                            <h3>2025 Trending Categories</h3>
+                            <ul>
+                                <li>Gravel & Bikepacking</li>
+                                <li>Smart City Cycling</li>
+                                <li>E-Bike Innovations</li>
+                                <li>MTB Tech</li>
+                                <li>Carbon-Neutral Racing</li>
+                                <li>Adaptive Cycling</li>
+                            </ul>
+    
+                            <h3>2025 Featured Creators</h3>
+                            <p>• Nordic Cycling<br>
+                            • Urban Pedals<br>
+                            • Bike Lab<br>
+                            • Dirt Revolution<br>
+                            • Eco Race Team<br>
+                            • Future Cyclist</p>
+                            
+                            <h3>Coming Soon</h3>
+                            <p>• Tour de France 2025 Tech Preview<br>
+                            • Building a Bike From Recycled Materials<br>
+                            • Racing Across Iceland on Hydrogen Bikes<br>
+                            • The Science of Speed Podcast</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+    
+            <div class="footer clearfix">
+                <div class="container_12">
+                    <p class="grid_12">
+                        <a href="javascript:history.back()" class="back-button">← Back</a> |
+                        <a href="legal.html">Legal Information</a> | 
+                        <a href="privacy.html">Privacy Policy</a> | 
+                        <a href="copyright.html">Copyright &copy; Pedal Faster 2025</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
